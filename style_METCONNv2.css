@@ -1,0 +1,127 @@
+/*Default spacing fix*/
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+/*SITE BANNER*/
+.bannerbg{
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url('stock_images/neurons-440660_1920_pixabay.jpg');
+  opacity: 0.35;
+}
+
+.banner{
+  position: relative;
+  text-align: center;
+  font-size: 7em;
+  font-family: 'Lato', sans-serif;
+}
+
+/* NAVBAR*/
+#navbar {
+  overflow: hidden;
+  text-align: center;
+  background-color: #333;
+  z-index: 2;
+}
+
+/* Navbar links */
+#navbar a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+.bg{
+  background: rgb(161,160,179);
+  background: linear-gradient(311deg, rgba(161,160,179,1) 0%, rgba(255,255,255,1) 35%, rgba(161,160,179,1) 100%);
+}
+
+/*BANNER 2*/
+
+.banner2{
+  margin:  0% 33%;
+  padding: 15px 20px;
+  position: relative;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  border: 2px solid #0c1d59;
+  border-radius: 5%;
+  font-family: 'Lato', sans-serif;
+  background: ghostwhite;
+}
+
+/*ABOUT SECTION*/
+
+#about{
+  padding: 20px;
+}
+.aboutgrid{
+  display: grid;
+  font-family: 'Lato', sans-serif;
+  grid-template:50% 50%;
+  grid-template-areas: "A B";
+  justify-content: center;
+}
+
+.list{
+  text-align:justify;
+  list-style-type: circle;
+  list-style-position: inside;
+}
+
+/*TEAM SECTION*/
+
+#team{
+  margin-top: 1.75em;
+  padding: 20px;
+}
+.teamgrid{
+  display: flex;
+  font-family: 'Lato', sans-serif;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 35px;
+}
+
+.grid-item{
+  display: flex;
+  flex-direction: column;
+  margin: 8px;
+  justify-content: center;
+  align-content: center;
+}
+
+.teamphoto{
+  border: #0c1d59 2px solid;
+  border-radius: 25%;
+  width: 12em;
+  height: 12em;
+}
