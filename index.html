@@ -1,120 +1,168 @@
 <!-- Why are you are reading this?! Why not consider signing up for the METCONN study instead!? -->
-<head>
-  <link rel='stylesheet' type = 'text/css' href='style_METCONNv2.css'>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The METCONN Study</title>
-</head>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="METCONN-site-V3.1.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <title>The MetConn Study</title>
+  </head>
 
-<body>
+  <body>
 
-<div id = 'banner' class = 'banner'>
-    <p>The<br>METCONN Project.</p>
-  <div id = 'bannerbg' class = 'bannerbg'></div>
-</div>
+    <div id = 'banner' class = 'banner'>
+        <p>The<br>METCONN Study.</p>
+      <div id = 'bannerbg' class = 'bannerbg'></div>
+    </div>
 
+    <div id = 'navbar' class = 'bar'>
+      <a href = '#about'>About</a>
+      <a href = '#participate'>Participate</a>
+      <a href = '#team'>Team</a>
+    </div>
 
-<div id = 'navbar' class = 'bar'>
-  <a href = '#about'>About</a>
-  <a href = '#participation'>Participate</a>
-  <a href = '#team'>Team</a>
-</div>
-
-<script type="text/javascript">
-  // When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
-
-// Get the navbar
-var navbar = document.getElementById('navbar');
-
-// Get the offset position of the navbar
-var sticky = navbar.offsetTop;
-
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add('sticky')
-  } else {
-    navbar.classList.remove('sticky');
-  }
-}
-</script>
-
-<div class = 'bg'>
-  <br>
-<div class = 'banner2'>
-  <strong>
-    <p>According to the World Health Organisation&#x27s estimates: approximately 50 million people worldwide are living with Dementia, with 10 million more cases every year.</p><br>
-    <p>Monash Biomedical Imaging&#x27s METCONN Study aims to beter understand the mechanisms of brain aging that contribute to Dementia & to explore new ways we might be able to
-      keep our brains young and healthy for longer.</p><br>
-    <p>We are currently looking for participants who are excited to help us fight Dementia by learning more about the aging brain! If that&#x27s you, please contact us through the form below!</p>
-  </strong>
-</div>
-
-  <div id = 'about'>
-    <h2>ABOUT THE METCONN PROJECT.</h2>
-    <div class = 'aboutgrid'>
-
-      <div class = 'grid-item'> <p><strong>It is well established that as we get older, so does our brain. <br>But some brains age differently than others!</strong><br> <br>
-  No matter how fast your brain ages though, we know that Brain-Aging almost always result in:</p>
-    <ul class = 'list'>
-      <li>Slower Information Processing.</li>
-      <li>Poorer Memory.</li>
-      <li>Difficulty paying attention.</li>
-      <li>Changes in Decision-making.</li>
-      <li>Higher risks of Dementia.</li>
-    </ul>
-    <p><br>But why does this happen and why are some people more vulnerable to these changes than others?</p>
+    <script type="text/javascript">
+      window.onscroll = function() {myFunction()};
+      var navbar = document.getElementById('navbar');
+      var sticky = navbar.offsetTop;
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add('sticky')
+        } else {
+          navbar.classList.remove('sticky');
+        }
+      }
+    </script>
+    <div class="bg">
+      <br>
+      <div class = 'banner2'>
+        <strong>
+          <p>According to the World Health Organisation&#x27;s estimates: approximately 50 million people worldwide are living with Dementia, with 10 million new cases arising every year.</p><br>
+          <p>Monash Biomedical Imaging&#x27;s METCONN Study aims to beter understand the mechanisms of brain aging that contribute to Dementia & to explore new ways we might be able to
+            keep our brains young and healthy for longer.</p><br>
+          <p>We are currently looking for participants who are excited to help us fight Dementia by learning more about the aging brain! If that&#x27;s you, please contact us by using the form below!</p>
+        </strong>
+        <img src="images/Mon_BioMedImage_Web.jpg" width = 100% alt="Monash Biomedical Imaging logo.">
       </div>
 
-      <div class = 'grid-item'><img src="stock_images/shutterstock_569802511.jpg" height = 350px width = 525px alt="Picture"></div>
-    </div>
+    <div id='about'>
+      <h2>ABOUT THE METCONN STUDY.</h2>
 
-    <div style = "padding: 4em 1em; font-family:'Lato', sans-serif; text-align: center;"> <p><strong>The METCONN Project is a scientific study</strong> that aims to answer these questions. <br><br>
-      Our team of researchers theorise that many of the mental-changes brought about by aging could be the result of metabolic changes in the brain, causing changes in how the brain uses the energy provided by the sugar and oxygen that we eat and breathe. <br><br>
-      To test this theory, the Metabolic Connectivity (or METCONN) team at Monash Biomedical Imaging are using state-of-the-art neuroimaging technology and blood analysis tools to measure how the brains of 20-to-90 year-old&#x27s use the sugar and oxygen they take in.<br><br>
-      By learning more about how the brain uses energy as it gets older, the METCONN team may discover new ways to keep our brains younger and healthier for longer. <br></p>
-    </div>
+      <div class='about-grid'>
 
-    <div class = 'aboutgrid'>
-      <div class = 'grid-item'><img src="stock_images/iStock-638361104(4).jpg" height = 350px width = 525px alt="Brain-Networks image"></div>
+        <div class='about-item a'>
+          <p><strong>It is well established that as we get older, so does our brain. <br>But some brains age differently than others!</strong><br> <br><br>
+      No matter how fast your brain ages though, we know that Brain-Ageing almost always results in:</p>
+        <ul class = 'list'>
+          <li>Slower Information Processing.</li>
+          <li>Poorer Memory.</li>
+          <li>Difficulty paying attention.</li>
+          <li>Changes in Decision-making.</li>
+          <li>Higher risk of Dementia.</li>
+        </ul>
+        <p><br>But why does this happen and why are some people more vulnerable to these changes than others?</p>
+        </div>
 
-    <div class = 'grid-item'><p>To accomplish our goal, we are currently looking for participants who would like to help us learn more about the brain!<br><br>
-      Anyone who participates will be helping us learn new and exciting things about the brain and about the aging process!<br><br>
-      Those interested in participating will be asked too...
-      <ul class = 'list'><strong>
-        <li>Fill in an Online Questionnaire.</li>
-        <li>Visit our labs in Clayton for some in-person cognitive tests.</li>
-        <li>Provide some blood samples and to take part in a state-of-the-art MR-PET Scan.</li></strong>
-      </ul><br>Please take note that MR-PET scans involve exposure to radioactive materials, albeit in small, safe and controlled doses.<br><br>
-        Our team is dedicated to your safety, and regularly practice appropriate hygienic and safety measures in our conduct, and will also compensate you for your time.<br>You can sign up for our study, or reach out for more infomration, by using the form at the end of this webpage!</p>
+        <div class='about-item b'>
+          <img src='images/shutterstock_569802511.jpg' height= '75%' width= '90%' class='about-photos' alt='Brain-Networks image'>
+        </div>
+
+        <div class='about-item c'>
+          <p><strong>The METCONN Project is a scientific study that aims to answer these questions.</strong> <br><br>
+            Our team of researchers theorise that many of the mental changes brought about by ageing could be the result of changes in how the brain uses energy provided by sugar and oxygen. <br><br>
+            To test this theory, the Metabolic Connectivity (or METCONN) team at Monash Biomedical Imaging are using state-of-the-art neuroimaging technology and blood analysis tools to measure how the brains of 20-to-90 year-old&#x27;s use the sugar and oxygen  that fuels the brain.<br><br>
+            By learning more about how the brain uses energy as it gets older, the METCONN team may discover new ways to keep our brains younger and healthier for longer. <br></p>
+        </div>
+
+        <div class='about-item d'>
+          <img src='images/013_MBI Images_20180410.JPG' height= '75%' width= '90%' class = 'about-photos' alt='MR-PET Scan image'>
+        </div>
+
+        <div class='about-item e'>
+          <br>
+          <p>To accomplish our goal, we are currently looking for participants who would like to help us learn more about the brain!<br><br>
+            Anyone who participates will be helping us learn new and exciting things about the brain and about the aging process!<br><br>
+            Those interested in participating will be asked to...
+            <ul class = 'list'><strong>
+              <li>Fill in an online questionnaire.</li>
+              <li>Visit our labs in Clayton for some in-person cognitive tests.</li>
+              <li>Provide some blood samples and take part in a state-of-the-art MR-PET Scan.</li></strong>
+            </ul><br>
+              Our team is dedicated to your safety, and responsibly practice appropriate hygienic and safety measures in our experimental conduct. We will also compensate you for your time.<br>You can sign up for our study, or reach out for more information, by using the form at the end of this webpage!</p>
+        </div>
       </div>
 
     </div>
-  </div>
 
     <div id = 'team'>
       <h2>MEET THE METCONN TEAM.</h2>
-      <p>The METCONN team is consists of a driven team of scientists and researchers from the Cognitive Neuroimaging Group at Monash Biomedical Imaging.<br></p>
+      <p>By bringing together our mutlidisciplinary backgrounds in science, we are confident in our ability to make exciting new breakthroughs in the science behind the aging brain.<br></p>
+      <br>
+      <div class = 'portraits'>
+        <figure class = 'f'>
+          <img class = 'teamphoto' src = 'images/portraits/Sharna.jpg' alt = '      Sharna Jamadar'>
+          <figcaption style='text-align: center;'>Dr Sharna Jamadar.<br><em>Chief Investigator.</em> </figcaption>
+        </figure><!--Sharna -->
 
-      <div class = 'teamgrid'>
-        <div class = 'grid-item'><img class = 'teamphoto' src = 'stock_images/Cdsdca1R_400x400.jpg' alt = 'Sharna Jamadar'></div>
-        <div class = 'grid-item'><p>Dr Sharna Jamadar.<br>Chief Investigator.</p></div>
+        <figure class = 'g'>
+          <img class = 'teamphoto' src = 'images/portraits/Gary.jpg' alt = '      Gary Egan'>
+          <figcaption style='text-align: center;'>Professor Gary Egan.<br><em>Investigator.</em></figcaption>
+        </figure><!--Gary -->
 
-        <div class = 'grid-item'><img class = 'teamphoto' src = 'stock_images/Hamish2.png' alt = 'Hamish Deery'></div>
-        <div class = 'grid-item'><p>Dr Hamish Deery<br>Researcher.</p></div>
 
-        <div class = 'grid-item'><img class = 'teamphoto' src = 'stock_images/oOdoJwdm_400x400.jpg' alt = 'Rob Di Paolo'></div>
-        <div class = 'grid-item'><p>Mr Robert Di Paolo<br>Researcher.</p></div>
+        <figure class = 'h'>
+          <img class = 'teamphoto' src = 'images/portraits/Hamish.jpg' alt = '      Hamish Deery'>
+          <figcaption style='text-align: center;'>Dr Hamish Deery.<br><em>Researcher & Masters Candidate.</em></figcaption>
+        </figure> <!--Hamish -->
+
+        <figure class = 'i'>
+          <img class = 'teamphoto' src = 'images/portraits/Rob.jpg' alt = '      Robert Di Paolo'>
+          <figcaption style='text-align: center;'>Mr Robert Di Paolo.<br><em>Researcher & PhD Candidate.</em></figcaption>
+        </figure> <!--Rob -->
+
+        <figure class = 'j'>
+          <img class = 'teamphoto' src = 'images/portraits/Nav.jpg' alt = '      Navyaan Siddiqui'>
+          <figcaption style='text-align: center;'>Mr Navyaan Siddiqui.<br><em>Research Assistant.</em></figcaption>
+        </figure> <!--Nav -->
+
+        <figure class = 'k'>
+          <img class = 'teamphoto' src = 'images/portraits/Gerard.jpg' alt = '      Gerard Murray'>
+          <figcaption style='text-align: center;'>Mr Gerard Murray.<br><em>Research Assistant.</em></figcaption>
+        </figure> <!--Gerard -->
+
+
+        <figure class = 'l'>
+          <img class = 'teamphoto' src = 'images/portraits/Amy.jpeg' alt = '      Amy Brodtmann'>
+          <figcaption style='text-align: center;'>Professor Amy Brodtmann.<br><em>Collaborator.</em></figcaption>
+        </figure> <!--Amy -->
+
+        <figure class = 'm'>
+          <img class = 'teamphoto' src = 'images/portraits/Cheryl.jpg' alt = '      Cheryl Grady'>
+          <figcaption style='text-align: center;'>Dr Cheryl Grady.<br><em>Collaborator.</em></figcaption>
+        </figure> <!--Cheryl -->
+      </div>
+      <br>
+    <h2>WANT TO KNOW MORE ABOUT OUR RESEARCH?</h2>
+      <p>The METCONN project is based out of the Cognitive Neuroimaging Group at Monash Biomedical Imaging, spearheaded by Dr Sharna Jamadar.<br>
+        You can find more information about the Cognitive Neuroimaging Group and Sharna's research on her website, which you find <a href="https://www.sharnajamadar.com/home">here<a>.</p>
+    </div>
+
+    <div id = 'participate'>
+      <h2>INTERESTED IN PARTICIPATING?</h2>
+      <h3>OR JUST WANT TO LEARN MORE ABOUT THE METCONN STUDY?</h3>
+      <p>Either way, we want to hear from you!</p>
+      <div class='aboveformtxt'>
+        <br>
+        <p>Please use the form included here to request more information or to register your interest in participating in our study!<br>
+          Alternatively, you can also reach our freindly and knowledgable team memebers by emailing us at: <strong>cogneurolab@monash.edu</strong></p>
+        <p>From all of us at METCONN, we're looking forward to hearing from you soon!</p>
+      </div>
+      <div id="gform" style='overflow: scroll;'>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdNN49vNEvz-kyPo5w5H4sgNjNiGU_WKxP2MTHiFkhIjbRYig/viewform?embedded=true" width="640" height="1200" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
       </div>
     </div>
-  
-      <div id = 'participation' class=''>
-        <div style = 'padding: 20px'>
-          <h2><strong>INTERESTED IN PARTICIPATING?</strong></h2>
-          <p>Sign up to participate by filling in the Google Form below! <br> Alternatively, if you would like to learn more about the METCONN project, you can also reach out to our freindly and knowledgable team memebers over email at cogneurolab@monash.edu</p>
-        </div>
-        
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdNN49vNEvz-kyPo5w5H4sgNjNiGU_WKxP2MTHiFkhIjbRYig/viewform?embedded=true" width="640" height="1025" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-</body>
+    </div
+  </body>
+</html>
