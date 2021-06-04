@@ -1,0 +1,186 @@
+/*Default spacing fix*/
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+/*SITE BANNER*/
+.bannerbg{
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url('images/neurons-440660_1920_pixabay.jpg');
+  opacity: 0.35;
+}
+
+.banner{
+  position: relative;
+  text-align: center;
+  font-size: 7em;
+  font-family: 'Lato', sans-serif;
+}
+
+/* NAVBAR*/
+#navbar {
+  overflow: hidden;
+  text-align: center;
+  background-color: #333;
+  z-index: 2;
+}
+
+#navbar a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+.bg{
+  background: rgb(161,160,179);
+  background: linear-gradient(311deg, rgba(161,160,179,1) 0%, rgba(255,255,255,1) 35%, rgba(161,160,179,1) 100%);
+  background-size: cover;
+}
+/*BANNER TWO*/
+.banner2{
+  margin:  0% 33%;
+  padding: 15px 30px;
+  position: relative;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  border: 2px solid #0c1d59;
+  border-radius: 5%;
+  font-family: 'Lato', sans-serif;
+  background: ghostwhite;
+}
+
+/*ABOUT SECTION*/
+
+#about{
+  padding: 50px;
+}
+
+.about-grid{
+  display: grid;
+  grid-template: 50% 50%;
+  grid-template-areas: "A B"
+                       "C C"
+                       "D E";
+  grid-column-gap: 10px;
+  grid-row-gap: 2em;
+}
+
+.a{
+  grid-area: A;
+}
+.b{
+  grid-area: B;
+  text-align: center;
+  display: inline-block;
+}
+.c{
+  grid-area: C;
+  text-align: center;
+  display: inline-block;
+}
+.d{
+  grid-area: D;
+  text-align: center;
+  display: inline-block;
+}
+.e{
+  grid-area: E;
+  display: inline-block;
+}
+
+.about-photos{
+  border: #0c1d59 2px solid;
+  border-radius: 10%;
+  overflow: hidden;
+}
+
+/*TEAM SECTION*/
+
+#team{
+  padding: 50px;
+}
+
+.portraits{
+  display: grid;
+  grid-template: repeat(1fr, 4);
+  grid-template-areas: "F G H I"
+                       "J K L M";
+  grid-column-gap: 10px;
+  grid-row-gap: 5px;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  max-width: 100%;
+  overflow:scroll;
+  padding: 5px;
+  border: #0c1d59 2px solid;
+}
+.f{
+  grid-area: F;
+}
+.g{
+  grid-area: G;
+}
+.h{
+  grid-area: H;
+}
+.i{
+  grid-area: I;
+}
+.j{
+  grid-area: J  ;
+}
+.k{
+  grid-area: K  ;
+}
+.l{
+  grid-area: L  ;
+}
+.m{
+  grid-area: M  ;
+}
+.teamphoto{
+  display: inline-block;
+  border: #0c1d59 2px solid;
+  border-radius: 25%;
+  width: 12em;
+  height: 12em;
+}
+
+/*PARTICIPATE SECTION*/
+
+#participate{
+  padding: 50px;
+}
+
+.aboveformtxt{
+  text-align: center;
+}
+
+#gform{
+  text-align: center;
+}
+
